@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100vh;
+}
+.premier-container {
+  background-color: #111;
+  color: #fff;
+  margin: 2px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+main {
+  display: grid;
+  border: 1px solid #333;
+  padding: 1rem;
+  width: 100%;
+}
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2px;
+  background-color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.site-content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.league-activities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-home-away {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #222;
+}
+
+.all,
+.away,
+.home {
+  border: 1px solid #666;
+  border-radius: 30%;
+  width: auto;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.league-table {
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  gap: 2rem;
+}
+
+.headings {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid #222;
+  padding: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+.one {
+  display: flex;
+  gap: 10%;
+  flex: 1;
+  /* justify-content: center; */
+  align-items: center;
+  position: absolute;
+  left: 5px;
+  bottom: 50%;
+  width: 30%;
+}
+
+.two {
+  display: flex;
+  position: absolute;
+  flex: 1;
+  left: 40%;
+  width: 100%;
+  gap: 6.4%;
+  /* justify-content: space-between; */
+  align-items: center;
+  bottom: 50%;
+}
+
+.paragraphs {
+  border: 1px solid #333;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+  font-weight: bold;
+}
+.keys p {
+  position: relative;
+  margin: 15px;
+}
+
+.keys .key1::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 2%;
+  width: 12px;
+  height: 12px;
+  background-color: blue;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.keys .key2::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 2%;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(138, 92, 6);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.keys .key3::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 2%;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(137, 16, 16, 0.986);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.headings {
+  position: relative;
+}
+.position1::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: blue;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 50px;
+}
+.position2::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: rgb(138, 92, 6);
+  position: absolute;
+  top: 50px;
+  border-radius: 5px 5px 0 0;
+}
+.position3::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: rgba(137, 16, 16, 0.986);
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 50px;
+}
+
+.flag-league-name {
+  margin-bottom: 15px;
+  position: relative;
+  margin: 10px 3.5rem;
+}
+.english-flag {
+  border-radius: 5px;
+  position: absolute;
+  display: inline;
+  left: -2.9rem;
+  top: 15px;
+}
+.country-name {
+  color: #f5ededb9;
+}
+.menu-logo {
+  background-color: transparent;
+}
+.search {
+  background-color: #111;
+  outline: none;
+}
